@@ -13,8 +13,12 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
-        {% extends 'pages/base.html' %}
-        {% block content %} <h1>Homepage</h1>
-        {% endblock content %}
+       <header>
+        <a href="{% url 'home' %}">Home</a> | <a href="{% url 'about' %}">About</a>
+        </header>
+            {% block content %}
+            {% endblock content %}
+        
+        <script src="" async defer></script>
     </body>
 </html>
